@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+}
+
+body header {
+  height: 90px;
+  background-color: rgb(23, 19, 255);
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  max-width: 1000px;
+  margin: auto;
+  line-height: 85px;
+  font-size: 20px;
+  font-weight: 300;
+  color: white;
+}

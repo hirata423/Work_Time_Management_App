@@ -1,0 +1,144 @@
+main h2 {
+  font-size: 30px;
+  line-height: 60px;
+  text-align: center;
+}
+
+main p {
+  color: #28a745;
+  text-align: center;
+}
+
+div {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.search-form {
+  flex-direction: row;
+  display: inline-block;
+  margin-right: 400px;
+}
+
+.search-form input {
+  width: 150px;
+  height: 22px;
+}
+
+main a {
+  width: 90px;
+  height: 30px;
+  padding: 0.5rem 1rem;
+  color: #111;
+  font-size: 15px;
+  line-height: 30px;
+  background-color: rgb(255, 213, 0);
+  border-radius: 10px;
+  box-shadow: 1px 2px 4px rgb(0 0 0 / 15%);
+}
+
+.category_button {
+  margin-right: 60px;
+}
+
+.mypage_button {
+  margin-left: 8px;
+}
+
+a,
+button {
+  transition: 0.3s;
+}
+
+table {
+  width: 70%;
+  margin: 0 auto;
+  word-break: break-all;
+  border-collapse: collapse;
+}
+
+table tr {
+  border-bottom: solid 1px #d9d9d9;
+  text-align: center;
+}
+
+table tr:first-child {
+  border-bottom: solid 3px #d9d9d9;
+}
+
+table th,
+table td {
+  padding: 1rem 0.75rem 1rem 0;
+  text-align: center;
+}
+
+table th:first-child,
+table td:first-child {
+  padding: 1rem 0.75rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 425px) {
+  /*　画面サイズが480pxからはここを読み込む　*/
+  main h2 {
+    font-size: 20px;
+  }
+  .search-form {
+    margin-right: 70px;
+  }
+  .category_button {
+    margin-right: 0px;
+  }
+  .mypage_button {
+    margin-left: 0;
+  }
+
+  table {
+    text-align: center;
+    width: 100%;
+  }
+  th,
+  td {
+    font-size: 10px;
+  }
+  main a {
+    width: 30px;
+    height: 15px;
+    font-size: 10px;
+    padding: 0.5rem 0.7rem;
+  }
+  .search-form input {
+    width: 150px;
+    height: 16px;
+  }
+}
+@media screen and (min-width: 426px) and (max-width: 777px) {
+  .search-form {
+    margin-right: 200px;
+  }
+  .category_button {
+    margin-right: 5px;
+  }
+  .mypage_button {
+    margin-left: 0;
+  }
+  table {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 778px) and (max-width: 1023px) {
+  .search-form {
+    margin-right: 200px;
+  }
+  .category_button {
+    margin-right: 10px;
+  }
+  .mypage_button {
+    margin-left: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /*　画面サイズが1024pxからはここを読み込む　*/
+}

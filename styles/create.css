@@ -1,0 +1,66 @@
+main {
+  text-align: center;
+}
+
+main h2 {
+  font-size: 30px;
+  line-height: 100px;
+}
+
+form input {
+  width: 150px;
+  height: 30px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: "1px black solid";
+  padding: 0;
+  font-size: 18px;
+  text-align: center;
+}
+
+input:hover {
+  background-color: rgb(131, 223, 234);
+}
+
+form button {
+  width: 70px;
+  height: 30px;
+  background-color: rgb(255, 213, 0);
+  border: none;
+  color: rgb(0, 0, 0);
+  border-radius: 10px;
+}
+
+main a {
+  width: 70px;
+  height: 30px;
+  margin-top: 40px;
+  display: inline-block;
+  color: #111;
+  font-size: 15px;
+  line-height: 30px;
+  background-color: rgb(255, 213, 0);
+  border-radius: 10px;
+  box-shadow: 1px 2px 4px rgb(0 0 0 / 15%);
+}
+
+@media screen and (max-width: 425px) {
+  main h2 {
+    font-size: 20px;
+  }
+  label {
+    display: block;
+  }
+  form button {
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 426px) and (max-width: 777px) {
+}
+
+@media screen and (min-width: 778px) and (max-width: 1023px) {
+}
+
+@media screen and (min-width: 1024px) {
+}

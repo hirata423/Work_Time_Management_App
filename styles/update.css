@@ -1,0 +1,74 @@
+main {
+  text-align: center;
+}
+
+main h2 {
+  font-size: 30px;
+  line-height: 100px;
+}
+
+form input {
+  width: 150px;
+  height: 30px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: "1px black solid";
+  padding: 0;
+  font-size: 18px;
+  text-align: center;
+}
+
+input:hover {
+  background-color: rgb(131, 223, 234);
+}
+
+form button {
+  width: 70px;
+  height: 30px;
+  background-color: rgb(255, 213, 0);
+  border: none;
+  color: rgb(0, 0, 0);
+  border-radius: 10px;
+}
+
+main table {
+  width: 70%;
+  margin: 0 auto;
+  word-break: break-all;
+  /* border-collapse: collapse; */
+  text-align: center;
+}
+
+table tr {
+  border-bottom: solid 1px #d9d9d9;
+}
+
+table tr:first-child {
+  border-bottom: solid 3px #d9d9d9;
+}
+
+table th,
+table td {
+  padding: 1rem 0.75rem 1rem 0;
+  text-align: center;
+}
+
+table th:first-child,
+table td:first-child {
+  padding: 1rem 0.75rem;
+  text-align: center;
+}
+@media screen and (max-width: 425px) {
+  main h2 {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 426px) and (max-width: 777px) {
+}
+
+@media screen and (min-width: 778px) and (max-width: 1023px) {
+}
+
+@media screen and (min-width: 1024px) {
+}

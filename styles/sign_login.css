@@ -1,0 +1,27 @@
+body {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.user_input {
+  width: 270px;
+  height: 27px;
+  padding: 3px;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+.submit_input {
+  width: 70px;
+  height: 30px;
+  margin-top: 30px;
+  background-color: rgb(255, 213, 0);
+  border: none;
+  color: rgb(0, 0, 0);
+  border-radius: 10px;
+}
+
+.session_message {
+  font-size: 12px;
+  color: blue;
+}
