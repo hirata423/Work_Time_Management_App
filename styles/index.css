@@ -37,3 +37,21 @@ a,
 button {
   transition: 0.3s;
 }
+
+@media screen and (max-width: 425px) {
+  main h2 {
+    font-size: 25px;
+  }
+  tl,
+  p {
+    font-size: 17px;
+  }
+}
+@media screen and (min-width: 426px) and (max-width: 777px) {
+}
+
+@media screen and (min-width: 778px) and (max-width: 1023px) {
+}
+
+@media screen and (min-width: 1024px) {
+}

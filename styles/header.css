@@ -19,3 +19,26 @@ h1 {
   font-weight: 300;
   color: white;
 }
+
+@media screen and (max-width: 425px) {
+  body header {
+    height: 50px;
+  }
+
+  h1 {
+    font-size: 15px;
+    line-height: 50px;
+    max-width: 350px;
+  }
+}
+@media screen and (min-width: 426px) and (max-width: 777px) {
+  h1 {
+    max-width: 650px;
+  }
+}
+
+@media screen and (min-width: 778px) and (max-width: 1023px) {
+}
+
+@media screen and (min-width: 1024px) {
+}

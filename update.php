@@ -100,24 +100,17 @@ if (isset($_POST['submit'])) {
                 <tr>
                     <th>経過時間</th>
                     <td>
-                        <input name="diff"
-                            value="<?php $now= new DateTime();
+                        <input name="diff" value="<?php $now= new DateTime();
 $sta = new DateTime($product['sta']);
 $interval=$now->diff($sta);
 echo $interval->format('%H:%i');?>">
                     </td>
                 </tr>
-                <tr>
-                    <th></th>
-                    <td> <button type="submit" name="submit">登録</button></td>
-                </tr>
-
-
             </table>
-
-
-
+            <button type="submit" name="submit">登録</button>
+            <a href="read.php">戻る</a>
         </form>
+
     </main>
 
 

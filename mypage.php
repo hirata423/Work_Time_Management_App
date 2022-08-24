@@ -29,6 +29,7 @@ $login_user = $_SESSION['login_user'];
     <title>マイページ</title>
 </head>
 
+<?php require_once "templates/header.php" ?>
 
 <body>
     <main>

@@ -30,10 +30,25 @@ form button {
   border: none;
   color: rgb(0, 0, 0);
   border-radius: 10px;
+  margin-top: 40px;
+  margin-right: 10px;
+}
+main a {
+  width: 70px;
+  height: 30px;
+  margin-top: 40px;
+  margin-left: 10px;
+  display: inline-block;
+  color: #111;
+  font-size: 13px;
+  line-height: 30px;
+  background-color: rgb(255, 213, 0);
+  border-radius: 10px;
+  box-shadow: 1px 2px 4px rgb(0 0 0 / 15%);
 }
 
 main table {
-  width: 70%;
+  width: 25%;
   margin: 0 auto;
   word-break: break-all;
   /* border-collapse: collapse; */
@@ -63,10 +78,15 @@ table td:first-child {
   main h2 {
     font-size: 20px;
   }
+  main table {
+    width: 70%;
+  }
 }
 @media screen and (min-width: 426px) and (max-width: 777px) {
+  main table {
+    width: 40%;
+  }
 }
-
 @media screen and (min-width: 778px) and (max-width: 1023px) {
 }
 

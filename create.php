@@ -59,7 +59,7 @@ if (isset($_POST['submit'])) {
                 <input name="category" required>
             </label>
             <label for="today">
-                日にち
+                日 に ち
                 <input name="today" required
                     value="<?php echo date('n/j'); ?>">
             </label>
@@ -68,6 +68,7 @@ if (isset($_POST['submit'])) {
                 <input name="sta" required
                     value="<?php echo date('H:i'); ?>">
             </label>
+            <!-- //登録の仕方を考える -->
             <label for="email">
                 <input name="email" type="hidden"
                     value="<?php echo $post_email ?>">
