@@ -11,13 +11,14 @@
 
 <body class="about">
     <h3>制作期間</h3>
-    <P>2022/8/12~8/15</P>
+    <P>2022/8/12~8/16</P>
 
     <h3>使用言語・ツール</h3>
     <p>HTML5</p>
     <p>CSS</p>
     <p>PHP(MAMP-8.0.8)</p>
     <p>MySQL</p>
+    <p>Heroku／Github</p>
 
     <h3>説明</h3>
     <p>PHPの学習の一環として製作しました。</p>
