@@ -18,6 +18,7 @@ $result = UserLogic::checkLogin();
 
 <?php require_once "templates/header.php" ?>
 
+
 <body>
     <main>
         <h2>作業時間管理アプリ</h2>

@@ -1,18 +1,21 @@
 <?php
 
 require_once 'env.php';
+require __DIR__ . 'vendor/autoload.php';
 
 function connect()
 {
+    $dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . '/..');
+    $dotenv->load();
     // $host = DB_HOST;
     // $db = DB_NAME;
     // $user = DB_USER;
     // $pass = DB_PASS;
 
-    $host = getenv('DB_HOST');
-    $db =getenv('DB_NAME');
-    $user =getenv('DB_USER');
-    $pass =getenv('DB_PASS');
+    $host = $_ENV('DB_HOST');
+    $db =$_ENV('DB_NAME');
+    $user =$_ENV('DB_USER');
+    $pass =$_ENV('DB_PASS');
 
 
 
