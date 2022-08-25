@@ -2,6 +2,9 @@
 session_start();
 require_once 'user_logic.php';//checkLogin()
 $result = UserLogic::checkLogin();
+
+require_once 'env.php';
+
 ?>
 
 <!DOCTYPE html>
