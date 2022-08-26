@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../../styles/footer.css">
     <title>作業時間管理アプリについて</title>
 </head>
 
@@ -28,7 +28,7 @@
     <p>愛読書は半沢直樹</p>
     <p>社会人サッカーチーム所属</p>
 
-    <a href="index.php">戻る</a>
+    <a href="../../index.php">戻る</a>
 
 </body>
 
