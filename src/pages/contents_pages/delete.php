@@ -1,6 +1,6 @@
 <?php
 
-require_once 'db_connect.php';//connect()
+require_once '../../../db_connect.php';//connect()
 
 try {
     $sql_delete = 'DELETE FROM times WHERE id = :id';

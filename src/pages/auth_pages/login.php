@@ -2,11 +2,11 @@
 
 session_start();
 
-require_once 'user_logic.php';
+require_once '../../../user_logic.php';//checkLogin()
 
 $result = UserLogic::checkLogin();
 if ($result) {
-    header('Location:mypage.php');
+    header('Location:../contents_pages/mypage.php');
     return;
 }
 
@@ -47,18 +47,18 @@ if (!$result) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/register_login_logout.css">
-    <title>ログイン完了</title>
+    <link rel="stylesheet" href="../../../styles/register_login_logout.css">
+    <title>作業時間管理アプリ-ログイン完了</title>
 </head>
 
 <body>
     <h2>ログイン完了</h2>
     <p>ログインしました</p>
     <p>
-        <a href="mypage.php">マイページへ</a>
+        <a href="../contents_pages/mypage.php">マイページへ</a>
     </p>
     <p>
-        <a href="index.php">トップへ</a>
+        <a href="../../../index.php">トップへ</a>
     </p>
 
 </body>

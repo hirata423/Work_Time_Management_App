@@ -1,13 +1,13 @@
 <?php
 session_start();
 date_default_timezone_set('Asia/Tokyo');
-require_once 'user_logic.php';//checkLogin()
-require_once 'db_connect.php';//connect()
+require_once '../../../user_logic.php';//checkLogin()
+require_once '../../../db_connect.php';//connect()
 
 $result = UserLogic::checkLogin();
 if (!$result) {
     $_SESSION['login_err']='ユーザーを登録してログインしてください';
-    header('Location:signup_form.php');
+    header('Location:../auth_pages/signup_form.php');
     return;
 }
 
@@ -56,13 +56,13 @@ if (isset($_POST['submit'])) {
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/update.css">
+    <link rel="stylesheet" href="../../../styles/update.css">
+    <link rel="stylesheet" href="../../../styles/header.css">
     <meta charset="UTF-8">
-    <title>終了時間</title>
+    <title>作業時間管理アプリ-作業終了・更新</title>
 </head>
 
-
-<?php require_once "templates/header.php" ?>
+<?php require_once "../../../templates/header.php" ?>
 
 <body>
     <main>
@@ -107,8 +107,8 @@ echo $interval->format('%H:%i');?>">
                     </td>
                 </tr>
             </table>
-            <button type="submit" name="submit">登録</button>
-            <a href="read.php">戻る</a>
+            <button type="submit" name="submit" title="作業の終了、内容の更新を決定します">登録</button>
+            <a href="read.php" title="一覧に戻ります">戻る</a>
         </form>
 
     </main>

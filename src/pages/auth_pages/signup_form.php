@@ -1,10 +1,10 @@
 <?php
 session_start();
-require_once 'functions.php';
-require_once 'user_logic.php';
+require_once '../../../functions.php';//h()
+require_once '../../../user_logic.php';//checkLogin()
 $result = UserLogic::checkLogin();
 if ($result) {
-    header('Location:mypage.php');
+    header('Location:../contents_pages/mypage.php');
     return;
 }
 $login_err = isset($_SESSION['login_err']) ? $_SESSION['login_err'] : null;
@@ -23,8 +23,8 @@ $_SESSION = array();
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/sign_login.css">
-    <title>新規ユーザー作成</title>
+    <link rel="stylesheet" href="../../../styles/sign_login.css">
+    <title>作業時間管理アプリ-新規ユーザー作成フォーム</title>
 </head>
 
 <body>

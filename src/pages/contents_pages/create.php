@@ -2,14 +2,14 @@
 
 session_start();
 date_default_timezone_set('Asia/Tokyo');
-require_once 'user_logic.php';//checkLogin()
-require_once 'db_connect.php';//connect()
+require_once '../../../user_logic.php';//checkLogin()
+require_once '../../../db_connect.php';//connect()
 
 //ログインの可否判定、否なら新規登録画面に返す
 $result = UserLogic::checkLogin();
 if (!$result) {
     $_SESSION['login_err']='ユーザーを登録してログインしてください';
-    header('Location:signup_form.php');
+    header('Location:../auth_pages/signup_form.php');
     return;
 }
 
@@ -43,12 +43,13 @@ if (isset($_POST['submit'])) {
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/create.css">
+    <link rel="stylesheet" href="../../../styles/create.css">
+    <link rel="stylesheet" href="../../../styles/header.css">
     <meta charset="UTF-8">
-    <title>開始時間</title>
+    <title>作業時間管理アプリ-作業開始</title>
 </head>
 
-<?php require_once "templates/header.php" ?>
+<?php require_once "../../../templates/header.php" ?>
 
 <body>
     <main>
@@ -73,9 +74,9 @@ if (isset($_POST['submit'])) {
                 <input name="email" type="hidden"
                     value="<?php echo $post_email ?>">
             </label>
-            <button type="submit" name="submit">登録</button>
+            <button type="submit" name="submit" title="作業内容を登録します">登録</button>
         </form>
-        <a href="mypage.php">戻る</a>
+        <a href="mypage.php" title="マイページに戻ります">戻る</a>
     </main>
 </body>
 

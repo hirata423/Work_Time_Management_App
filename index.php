@@ -13,7 +13,7 @@ $result = UserLogic::checkLogin();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/index.css">
-    <title>アプリトップページ</title>
+    <title>作業時間管理アプリー誰でも簡単に時間を管理-無料</title>
 </head>
 
 <?php require_once "templates/header.php" ?>
@@ -31,8 +31,8 @@ $result = UserLogic::checkLogin();
 
         <p>
             <?php echo $result ?
-                "<a href='mypage.php'>マイページ</a>" :
-                "<a href='login_form.php'>ログイン</a>"?>
+                "<a href='/src/pages/contents_pages/mypage.php'>マイページ</a>" :
+                "<a href='/src/pages/auth_pages/login_form.php'>ログイン</a>"?>
         </p>
 
     </main>

@@ -12,11 +12,9 @@
 
 <body>
     <header>
-        <a href="index.php">
-            <h1>
-                作業時間管理アプリ
-            </h1>
-        </a>
+        <h1>
+            作業時間管理アプリ
+        </h1>
     </header>
 
 </body>

@@ -2,11 +2,11 @@
 
 session_start();
 
-require_once 'user_logic.php';
+require_once '../../../user_logic.php';//checkLogin()
 
 $result = UserLogic::checkLogin();
 if ($result) {
-    header('Location:mypage.php');
+    header('Location:../contents_pages/mypage.php');
     return;
 }
 
@@ -55,13 +55,6 @@ if (count($err) > 0) {
     header('Location:signup_form.php');
     return;
 }
-
-
-
-
-
-
-
 ?>
 
 
@@ -72,8 +65,8 @@ if (count($err) > 0) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/register_login_logout.css">
-    <title>ユーザー登録完了</title>
+    <link rel="stylesheet" href="../../../styles/register_login_logout.css">
+    <title>作業時間管理アプリ-ユーザー登録完了</title>
 </head>
 
 <body>

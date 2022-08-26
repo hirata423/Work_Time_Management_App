@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/footer.css">
-    <title>About_App</title>
+    <title>作業時間管理アプリについて</title>
 </head>
 
 <body class="about">
@@ -25,7 +25,8 @@
     <p>誰でも登録、利用可能です。</p>
 
     <h3>製作者</h3>
-    <p>半沢直樹に憧れた男</p>
+    <p>愛読書は半沢直樹</p>
+    <p>社会人サッカーチーム所属</p>
 
     <a href="index.php">戻る</a>
 

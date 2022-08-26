@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-require_once 'user_logic.php';
+require_once '../../../user_logic.php';//checkLogin()
 
 if (!$logout=filter_input(INPUT_POST, 'logout')) {
     exit("不正なリクエスト");
@@ -25,15 +25,15 @@ UserLogic::Logout();
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/register_login_logout.css">
-    <title>ログアウト</title>
+    <link rel="stylesheet" href="../../../styles/register_login_logout.css">
+    <title>作業時間管理アプリ-ログアウト完了</title>
 </head>
 
 <body>
     <h2>ログアウト完了</h2>
     <P>ログアウトしました</P>
     <p>
-        <a href="index.php">ログイン画面へ</a>
+        <a href="login_form.php">ログイン画面へ</a>
     </p>
 
 </body>

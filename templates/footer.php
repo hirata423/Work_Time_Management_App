@@ -15,7 +15,7 @@
         <p>
             © 2022 SagyouKanri-app.
         </p>
-        <a href="about.php">
+        <a href="../src/pages/about.php">
             本アプリについて
         </a>
 
