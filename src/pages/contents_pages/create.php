@@ -77,7 +77,7 @@ if (isset($_POST['submit'])) {
             </label>
             <button type="submit" name="submit" title="作業内容を登録します">登録</button>
         </form>
-        <a href="mypage.php" title="マイページに戻ります">戻る</a>
+        <a href="read.php" title="マイページに戻ります">戻る</a>
     </main>
 </body>
 

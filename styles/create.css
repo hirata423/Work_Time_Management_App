@@ -16,6 +16,7 @@ form input {
   border-bottom: "1px black solid";
   padding: 0;
   font-size: 18px;
+  box-shadow: 1px 2px 4px rgb(0 0 0 / 15%);
   text-align: center;
 }
 
@@ -30,6 +31,8 @@ form button {
   border: none;
   color: rgb(0, 0, 0);
   border-radius: 10px;
+  font-size: 15px;
+  box-shadow: 1px 2px 4px rgb(0 0 0 / 15%);
 }
 
 main a {
