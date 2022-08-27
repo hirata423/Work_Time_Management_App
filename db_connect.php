@@ -12,6 +12,7 @@ function connect()
     // $user = DB_USER;
     // $pass = DB_PASS;
 
+    //デプロイ
     $host = getenv('DB_HOST');
     $db =getenv('DB_NAME');
     $user =getenv('DB_USER');
