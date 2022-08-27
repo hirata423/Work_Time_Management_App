@@ -23,7 +23,8 @@ session_destroy();
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
     <link rel="stylesheet" href="../../../styles/sign_login.css">
     <title>作業時間管理アプリ-ログインフォーム</title>
 </head>
@@ -65,7 +66,7 @@ session_destroy();
 
     </form>
     <P>
-        <a href="signup_form.php" type="button">新規登録はこちら</a>
+        <a href="signup_form.php" type="button">新規登録はコチラ</a>
     </P>
 
 </body>
