@@ -42,7 +42,6 @@ if (isset($_POST['submit'])) {
 
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
     <link rel="stylesheet" href="../../../styles/create.css">
     <link rel="stylesheet" href="../../../styles/header.css">
@@ -75,9 +74,14 @@ if (isset($_POST['submit'])) {
                 <input name="email" type="hidden"
                     value="<?php echo $post_email ?>">
             </label>
-            <button type="submit" name="submit" title="作業内容を登録します">登録</button>
+            <div>
+                <button type="submit" name="submit" title="作業内容を登録します">登録</button>
+            </div>
         </form>
-        <a href="read.php" title="マイページに戻ります">戻る</a>
+        <div>
+            <button type="button" title="作業内容を登録します" onclick="location.href='read.php'">戻る</button>
+        </div>
+
     </main>
 </body>
 

@@ -72,8 +72,6 @@ try {
             </form>
             <a href="create.php" class="category_button" title="作業を開始できます">開始</a>
             <a href="mypage.php" class="mypage_button" title="マイページに戻ります">戻る</a>
-
-
         </div>
         <table>
             <tr>
@@ -82,8 +80,6 @@ try {
                 <th>開始時間</th>
                 <th>終了時間</th>
                 <th>経過時間</th>
-                <th></th>
-                <th></th>
             </tr>
             <?php
     foreach ($results as $result) {

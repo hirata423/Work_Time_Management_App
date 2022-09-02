@@ -111,7 +111,7 @@ echo $interval->format('%H:%i');?>">
                 </tr>
             </table>
             <button type="submit" name="submit" title="作業の終了、内容の更新を決定します">登録</button>
-            <a href="read.php" title="一覧に戻ります">戻る</a>
+            <button type="button" title="一覧に戻ります" onclick="location.href='read.php'">戻る</button>
         </form>
 
     </main>
