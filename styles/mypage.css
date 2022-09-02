@@ -6,37 +6,21 @@ main {
   text-align: center;
   margin-top: 100px;
 }
-
-p {
-  margin-bottom: 30px;
+div {
+  display: block;
+  margin: 30px 0;
 }
-
-.login_user {
+.display {
   font-size: 22px;
 }
-.date_display {
-  font-size: 20px;
-}
 
-form input {
-  width: 90px;
+button {
+  width: 100px;
   height: 30px;
-  font-size: 15px;
   border-radius: 10px;
   border: none;
-  background-color: rgb(255, 213, 0);
-  box-shadow: 1px 2px 4px rgb(0 0 0 / 15%);
-  color: black;
-}
-
-main a {
-  width: 90px;
-  height: 30px;
-  padding: 0.5rem 1rem;
-  color: black;
   font-size: 15px;
-  background-color: rgb(255, 213, 0);
-  border-radius: 10px;
   box-shadow: 1px 2px 4px rgb(0 0 0 / 15%);
-  text-decoration: none;
+  background-color: rgb(255, 213, 0);
+  color: rgb(0, 0, 0);
 }

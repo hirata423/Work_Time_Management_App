@@ -12,6 +12,8 @@ if (!$result) {
 }
 
 //更新する作業のIDを判定
+//課題：URLから誰でも変更できちゃう（笑）
+//if(ログインユーザーならみたいな){}
 if (isset($_GET['id'])) {
     try {
         $sql_select = 'SELECT * FROM times WHERE id = :id';

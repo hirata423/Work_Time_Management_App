@@ -4,7 +4,7 @@ session_start();
 date_default_timezone_set('Asia/Tokyo');
 $week = ['日','月','火','水','木','金','土',];
 $date_w= date('w');
-$date=date('n/d');
+$date=date('n/j');
 require_once '../../../user_logic.php';//checkLogin()
 require_once '../../../functions.php';//h()
 
@@ -34,24 +34,23 @@ $login_user = $_SESSION['login_user'];
 
 <body>
     <main>
-        <P class="login_user">
+        <div class="display">
             <?php echo h($login_user['name']); ?>さん、お疲れ様です！
-        </P>
-        <p class="date_display">
+        </div>
+        <div class="display">
             今日は<?php echo "$date($week[$date_w])"?>です。
-        </p>
-        <p>
-            <a href="create.php" title="作業を開始できます">作業開始</a>
-        </p>
-        <p>
-            <a href="read.php" title="作業の終了・更新ができます">記録一覧</a>
-        </p>
-        <p>
-            <a href="../../../index.php" title="トップページに戻ります">トップ</a>
-        </p>
-        <p>
+        </div>
+        <div>
+            <button type="button" title="作業を開始できます" onclick="location.href='create.php'">作業開始</button>
+        </div>
+        <div>
+            <button type="button" title="作業の終了・更新ができます" onclick="location.href='read.php'">作業一覧</button>
+        </div>
+        <div>
+            <button type="button" title="トップページに戻ります" onclick="location.href='../../../index.php'">トップへ</button>
+        </div>
         <form action="../auth_pages/logout.php" method="post">
-            <input type="submit" name="logout" value="ログアウト" title="ログアウトします">
+            <button type="submit" name="logout" title="ログアウトします">ログアウト</button>
         </form>
         </p>
     </main>
