@@ -3,6 +3,7 @@
 session_start();
 date_default_timezone_set('Asia/Tokyo');
 require_once '../../../user_logic.php';//checkLogin()
+require_once '../../../time_logic.php';//createTime()
 require_once '../../../db_connect.php';//connect()
 
 //ログインの可否判定、否なら新規登録画面に返す
@@ -18,22 +19,7 @@ $login_user = $_SESSION['login_user'];
 $post_email = $login_user['email'];
 
 if (isset($_POST['submit'])) {
-    try {
-        $sql_insert =
-        "INSERT INTO times(category,today,sta,email)
-        VALUES(:category,:today,:sta,:email)";
-        $stmt = connect()->prepare($sql_insert);
-        $stmt->bindValue(':category', $_POST['category'], PDO::PARAM_STR);
-        $stmt->bindValue(':today', $_POST['today'], PDO::PARAM_STR);
-        $stmt->bindValue(':sta', $_POST['sta'], PDO::PARAM_STR);
-        $stmt->bindValue(':email', $_POST['email'], PDO::PARAM_STR);
-        $stmt->execute();
-        $count = $stmt->rowCount();
-        $message = "新規作業を{$count}件開始しました！";
-        header("Location: read.php?message={$message}");
-    } catch (PDOException $e) {
-        exit($e->getMessage());
-    }
+    TimeLogic::createTime($_POST);
 }
 ?>
 

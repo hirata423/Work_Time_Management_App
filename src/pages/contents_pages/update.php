@@ -2,6 +2,7 @@
 session_start();
 date_default_timezone_set('Asia/Tokyo');
 require_once '../../../user_logic.php';//checkLogin()
+require_once '../../../time_logic.php';//createTime()
 require_once '../../../db_connect.php';//connect()
 
 $result = UserLogic::checkLogin();
@@ -12,7 +13,7 @@ if (!$result) {
 }
 
 //更新する作業のIDを判定
-//課題：URLから誰でも変更できちゃう（笑）
+//課題：URLから誰でも変更できてしまう
 //if(ログインユーザーならみたいな){}
 if (isset($_GET['id'])) {
     try {
@@ -33,22 +34,7 @@ if (isset($_GET['id'])) {
 
 //更新,作業の終了
 if (isset($_POST['submit'])) {
-    try {
-        $sql_update = 'UPDATE times SET diff = :diff , fin = :fin , sta=:sta , today=:today , category=:category WHERE id = :id';
-        $stmt = connect()->prepare($sql_update);
-        $stmt->bindValue(':diff', $_POST['diff'], PDO::PARAM_STR);
-        $stmt->bindValue(':fin', $_POST['fin'], PDO::PARAM_STR);
-        $stmt->bindValue(':sta', $_POST['sta'], PDO::PARAM_STR);
-        $stmt->bindValue(':today', $_POST['today'], PDO::PARAM_STR);
-        $stmt->bindValue(':category', $_POST['category'], PDO::PARAM_STR);
-        $stmt->bindValue(':id', $_GET['id'], PDO::PARAM_INT);
-        $stmt->execute();
-        $count = $stmt->rowCount();
-        $message = "作業を{$count}件終了しました！";
-        header("Location: read.php?message={$message}");
-    } catch (PDOException $e) {
-        exit($e->getMessage());
-    }
+    TimeLogic::updateTime($_POST, $_GET);
 }
 ?>
 
@@ -57,7 +43,6 @@ if (isset($_POST['submit'])) {
 
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
     <link rel="stylesheet" href="../../../styles/update.css">
     <link rel="stylesheet" href="../../../styles/header.css">

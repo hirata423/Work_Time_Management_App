@@ -50,9 +50,7 @@ $login_user = $_SESSION['login_user'];
             <button type="button" title="トップページに戻ります" onclick="location.href='../../../index.php'">トップへ</button>
         </div>
         <form action="../auth_pages/logout.php" method="post">
-            <!-- //inputじゃないとダメかも -->
             <input type="submit" name="logout" title="ログアウトします" value="ログアウト">
-            <!-- <button type="submit" name="logout" title="ログアウトします">ログアウト</button> -->
         </form>
         </p>
     </main>
